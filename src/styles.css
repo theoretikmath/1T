@@ -1,0 +1,134 @@
+/* Ana pencerenin arkaplan gradient'i (Mavi/Gri Tema) */
+.main-pane {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #34495e);
+}
+
+/* Başlık "OneT" */
+#titleLabel {
+    -fx-font-size: 32px;
+    -fx-font-family: "Sans-Serif";
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-padding: 30px 0 20px 0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0.1, 0, 2);
+}
+
+/* Sekmelerin (Student, Teacher, Admin) olduğu bar */
+#tabBar {
+    -fx-alignment: center;
+    -fx-background-color: transparent;
+}
+
+/* Aktif OLMAYAN sekme stili */
+.tab-inactive {
+    -fx-background-color: #34495e;
+    -fx-padding: 15px 40px;
+    -fx-cursor: hand;
+    -fx-opacity: 0.9;
+    -fx-alignment: center;
+}
+
+/* Aktif OLMAYAN sekmenin üzerine gelince */
+.tab-inactive:hover {
+    -fx-background-color: #4a627a;
+    -fx-opacity: 1.0;
+}
+
+/* Aktif OLAN sekme stili */
+.tab-active {
+    -fx-background-color: #3498db;
+    -fx-padding: 15px 40px;
+    -fx-opacity: 1.0;
+    -fx-alignment: center;
+}
+
+/* Aktif OLAN sekmenin üzerine gelince */
+.tab-active:hover {
+    -fx-background-color: #5dade2;
+    -fx-opacity: 1.0;
+}
+
+/* Sekmelerdeki (Student, Teacher, Admin) yazı stili */
+.tab-label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+/* Giriş formlarının olduğu ana panel */
+.login-pane {
+    -fx-background-color: #3498db;
+}
+
+/* ### TEXTFIELD ve PASSWORD FIELD DÜZELTME ### */
+.input-field {
+    -fx-background-color: white;
+    -fx-background-radius: 5px;
+    -fx-padding: 15px 15px; /* YENİ: Dikey boşluğu (15px) ile yüksekliği kontrol ediyoruz */
+    -fx-font-size: 14px;
+    -fx-prompt-text-fill: #aaaaaa;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 5, 0.0, 0, 2);
+    /* -fx-pref-height kaldırıldı. */
+}
+/* ### /TEXTFIELD ve PASSWORD FIELD DÜZELTME ### */
+
+/* "Giriş Yap" / "Teste Başla" butonu */
+.submit-button {
+    -fx-background-color: #2980b9;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+    -fx-padding: 12px 20px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0.1, 0, 2);
+}
+
+.submit-button:hover {
+    -fx-background-color: #3498db;
+}
+
+/* ComboBox'ı TextField gibi göstermek için */
+.combo-box-input {
+    -fx-background-color: white;
+    -fx-background-radius: 5px;
+    -fx-padding: 0px 0px 0px 0px;
+    -fx-font-size: 14px;
+    -fx-prompt-text-fill: #aaaaaa;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 5, 0.0, 0, 2);
+    /* -fx-pref-height kaldırıldı. */
+}
+
+/* ### COMBOBOX İÇ İÇE ELEMAN DÜZELTME ### */
+/* ComboBox'un içindeki görünen alan (metin) */
+.combo-box-input .list-cell {
+    -fx-background: transparent;
+    -fx-text-fill: #333333;
+    -fx-padding: 15px 15px; /* YENİ: TextField ile aynı 15px dikey padding verildi */
+}
+
+/* ComboBox'un oku */
+.combo-box-input .arrow-button {
+    -fx-background-color: #f0f0f0;
+    -fx-background-radius: 0 5px 5px 0;
+    /* Dikey padding kaldırıldı, yükseklik list-cell ile eşitlendi */
+    -fx-padding: 0 12px;
+}
+/* ### /COMBOBOX İÇ İÇE ELEMAN DÜZELTME ### */
+
+
+.combo-box-input .arrow {
+    -fx-background-color: #555;
+}
+
+.combo-box-popup .list-view .list-cell {
+    -fx-background-color: white;
+    -fx-text-fill: #333;
+    -fx-padding: 10px 15px;
+    -fx-font-size: 14px;
+}
+
+.combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: #f0f0f0;
+}
